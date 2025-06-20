@@ -1,0 +1,92 @@
+.chart-section {
+  margin-top: 1.5rem;
+}
+
+.chart-container {
+  background: linear-gradient(135deg, #fef2f2 0%, #fce7f3 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart-header {
+  margin-bottom: 1rem;
+}
+
+.chart-header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.chart-header__label {
+  font-size: 0.875rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.chart-header__badge {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.chart-wrapper {
+  height: 12rem;
+  width: 100%;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-section,
+  .results-section {
+    gap: 1rem;
+  }
+  
+  .input-section__header h2,
+  .results-section__header h2 {
+    font-size: 1.125rem;
+  }
+  
+  .expected-returns__value {
+    font-size: 1.25rem;
+  }
+  
+  .compounding-effect__percentage {
+    font-size: 1.5rem;
+  }
+  
+  .chart-wrapper {
+    height: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-group__input,
+  .input-group__select {
+    font-size: 0.875rem;
+  }
+  
+  .calculate-button {
+    font-size: 0.875rem;
+    padding: 0.625rem 1.25rem;
+  }
+  
+  .chart-wrapper {
+    height: 8rem;
+  }
+}

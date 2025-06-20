@@ -1,0 +1,83 @@
+.results-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.results-section__header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.expected-returns {
+  background-color: #dbeafe;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.expected-returns__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expected-returns__label {
+  color: #374151;
+  font-weight: 500;
+}
+
+.expected-returns__value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.results-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.results-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.results-item--investment {
+  background-color: #dcfce7;
+}
+
+.results-item--gains {
+  background-color: #faf5ff;
+}
+
+.results-item--percentage {
+  background-color: #fff7ed;
+}
+
+.results-item__label {
+  color: #374151;
+  font-weight: 500;
+}
+
+.results-item__value {
+  font-weight: 600;
+}
+
+.results-item--investment .results-item__value {
+  color: #059669;
+}
+
+.results-item--gains .results-item__value {
+  color: #7c3aed;
+}
+
+.results-item--percentage .results-item__value {
+  color: #ea580c;
+}
