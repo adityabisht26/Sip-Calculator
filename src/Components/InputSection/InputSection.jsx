@@ -26,8 +26,8 @@ const InputSection = ({
           <span className="input-group__currency">₹</span>
           <input
             type="number"
-            value={monthlyAmount}
-            onChange={(e) => setMonthlyAmount(Number(e.target.value))}
+            value={monthlyAmount || ''}
+            onChange={(e) => setMonthlyAmount(Number(e.target.value) || 0)}
             className="input-group__input"
             placeholder="Enter amount"
           />
@@ -40,8 +40,8 @@ const InputSection = ({
           Duration (Years)
         </label>
         <select
-          value={duration}
-          onChange={(e) => setDuration(Number(e.target.value))}
+          value={duration || ''}
+          onChange={(e) => setDuration(Number(e.target.value) || 0)}
           className="input-group__select"
         >
           {[...Array(30)].map((_, i) => (
@@ -59,8 +59,8 @@ const InputSection = ({
         </label>
         <input
           type="number"
-          value={expectedReturns}
-          onChange={(e) => setExpectedReturns(Number(e.target.value))}
+          value={expectedReturns || ''}
+          onChange={(e) => setExpectedReturns(Number(e.target.value) || 0)}
           className="input-group__input"
           placeholder="Enter expected returns"
           step="0.1"
@@ -76,12 +76,7 @@ const InputSection = ({
         </h3>
         <div className="compounding-effect__value">
           <div className="compounding-effect__percentage">
-            ₹{returnsPercentage}%
-          </div>
-          <div className="compounding-effect__check">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
+            {returnsPercentage}%
           </div>
         </div>
       </div>
